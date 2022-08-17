@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini mart</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body>
+    <!-- Header starts -->
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <img class="h-20 inline" src="images/logo.png" />
+        </span>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul
+        class="md:flex md:items-center md:z-auto md:static absolute z-[+1] bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a href="index.html" class="text-xl hover:text-green-500 duration-500"
+            >HOME</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="products.html"
+            class="text-xl hover:text-green-500 duration-500"
+            >PRODUCTS</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="about.html" class="text-xl hover:text-green-500 duration-500"
+            >ABOUT</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="contact.html"
+            class="text-xl hover:text-green-500 duration-500"
+            >CONTACT</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            class="bg-green-500 text-white hover:bg-gray-900 rounded-full p-2 fa fa-shopping-cart"
+            href="checkout.html"
+          >
+            Cart(0)</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            class="bg-gray-900 text-white hover:bg-green-500 rounded-full p-2"
+            href="sign.html"
+          >
+            sign in</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/cap.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">Cap</h2>
+              <p class="mt-1">rs:800</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/makeup.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Makeup
+              </h2>
+              <p class="mt-1">Rs:2500</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/perfume.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                perfume
+              </h2>
+              <p class="mt-1">Rs:3500</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/teddybear.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                Teddy Bear
+              </h2>
+              <p class="mt-1">Rs:1200</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/wallet.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                wallet
+              </h2>
+              <p class="mt-1">Rs:350</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/lipstick.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                lipstick
+              </h2>
+              <p class="mt-1">Rs:1200</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/shoes1.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                fashion shoes
+              </h2>
+              <p class="mt-1">Rs:3000</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/shoes2.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                nike shoes
+              </h2>
+              <p class="mt-1">Rs:4500</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/shoes3.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                nike red shoes
+              </h2>
+              <p class="mt-1">Rs:3200</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/iphone11 case.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                iphone 11 slicion case
+              </h2>
+              <p class="mt-1">Rs:800</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/iphone 11 red case.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                iphone 11 red slicion case
+              </h2>
+              <p class="mt-1">Rs:800</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/iphone x case.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                iphone X slicion case
+              </h2>
+              <p class="mt-1">Rs:800</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/iphone 6.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                iphone 6 case
+              </h2>
+              <p class="mt-1">Rs:500</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/iphone xr case.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                iphone xr case
+              </h2>
+              <p class="mt-1">Rs:600</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/airpods case.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                airpods case
+              </h2>
+              <p class="mt-1">Rs:300</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/airpods.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                airpods
+              </h2>
+              <p class="mt-1">Rs:6000</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/earbuds.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                earbuds
+              </h2>
+              <p class="mt-1">Rs:2500</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/blue shoes.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                blue shoes
+              </h2>
+              <p class="mt-1">Rs:1950</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/ladies yellow.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                ladies yellow
+              </h2>
+              <p class="mt-1">Rs:2800</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img
+                alt="ecommerce"
+                class="object-cover object-center w-full h-full block"
+                src="images/ladies chapal.jpg"
+              />
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                CATEGORY
+              </h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">
+                ladies chapal
+              </h2>
+              <p class="mt-1">Rs:1200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-gray-600 body-font">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        >
+          <img class="h-10" src="images/logo.png" />
+          <span class="ml-3 text-xl">Mini mart</span>
+        </a>
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © develope by aneesh acharia
+        </p>
+        <div
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-4"
+        >
+          <a class="fa fa-facebook-square" href="#"></a>
+          <a class="fa fa-twitter-square" href="#"></a>
+          <a class="fa fa-instagram" href="#"></a>
+          <a class="fa fa-linkedin-square" href="#"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="ss.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
